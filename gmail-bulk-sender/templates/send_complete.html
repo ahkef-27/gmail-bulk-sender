@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>送信完了</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(to bottom right, #f0f4ff, #e0e7ff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffffcc;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid #dcdcdc;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4b0082;
+            text-shadow: none;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .result-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .result-list li {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+
+        .success {
+            background-color: #e6f7ff;
+            color: #2c7be5;
+            border: 1px solid #b3d8ff;
+        }
+
+        .error {
+            background-color: #fff0f0;
+            color: #d9534f;
+            border: 1px solid #f5c6cb;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #4b9cd3;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(75, 156, 211, 0.3);
+        }
+
+        .back-button:hover {
+            background-color: #357ab8;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>送信が完了しました</h1>
+        <p>送信結果は以下の通りです。</p>
+
+        <ul class="result-list">
+            {% for result in results %}
+                <li class="{% if '✅' in result %}success{% else %}error{% endif %}">
+                    {{ result }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <a href="/" class="back-button">トップに戻る</a>
+    </div>
+</body>
