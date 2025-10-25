@@ -48,10 +48,7 @@ Flaskとpandasを用いて、CSVファイルからGmailを自動送信し、送�
 ## 🧪 よくわからなかったこと（今後の学習メモ）
 
 - ✅ 例外処理の強化
-- ✅ GitHubでコード公開＋READMEで解説
 - ✅ スクリーンショットやGIFで動作を見せる
-- 🔍 `.gitignore` の役割を調査中
-- 🧵 `render_template_string()`：HTMLをPython内に直接埋め込む方法
 
 ---
 
