@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メール送信アプリ | ポートフォリオ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #a3cbe8, #b7e3d1);
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0, 168, 107, 0.3);
+            text-align: center;
+            border: 2px solid rgba(0, 168, 107, 0.4);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #000000;
+            text-shadow: none;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            color: #000000;
+        }
+
+        .send-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 24px 20px;
+            min-height: 80px;
+            font-size: 18px;
+            background-color: rgba(0, 168, 107, 0.6);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: rgba(0, 115, 207, 0.6);
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📧 メール送信アプリ</h1>
+        <p>あなたのメッセージを、確実に届けます。</p>
+
+        <form action="/send" method="post">
+            <button class="send-button" type="submit">メールを送信</button>
+        </form>
+
+        <div class="footer">
+            <p class="note">※このアプリはPython × Flask × CSV連携で構築されています。</p>
+        </div>
+    </div>
+</body>
+</html>
