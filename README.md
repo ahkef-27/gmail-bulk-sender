@@ -27,7 +27,7 @@ Flaskとpandasを用いて、CSVファイルからGmailを自動送信し、送�
 ---
 
 ## 💡 工夫した点
-CSSでUIの視認性を強化
+CSS(HTMLに埋め込む形)でUIの視認性を強化
 
 ✅ / ❌ をJinja2で動的に表示し、送信成功・失敗を一目で判別可能
 
@@ -78,6 +78,7 @@ SMTP接続エラーなどが発生した場合、赤いエラーメッセージ�
 | user04@example.com        | 💡お役立ち ちょっとしたヒントをお届けします   | 皆様のお役に立てるような、ちょっとした情報やヒントをお送りします。ご参考になれば嬉しいです！🌸 |
 | user05@example.com        | 🌟感謝を込めて】いつもありがとうございます   | 日頃の感謝の気持ちを込めて、メッセージをお送りします。これからもどうぞよろしくお願いいたします！🙏 |
 
+---
 
 🧪 セットアップ手順
 
@@ -85,7 +86,25 @@ SMTP接続エラーなどが発生した場合、赤いエラーメッセージ�
 ① .env ファイルの作成
 
 Gmailの認証情報を .env ファイルで管理しています。 セキュリティのため、Gitには含めていません。以下のような内容で .env を作成してください（.env.sample を参考にしてください）：
-env
+
+EMAIL_ADDRESS=your_email@example.com
+EMAIL_PASSWORD=your_app_password
+
+② 必要なライブラリのインストール
+
+仮想環境を作成した上で、必要なライブラリをインストールしてください：
+
+pip install flask pandas python-dotenv
+
+または、requirements.txt がある場合：
+
+pip install -r requirements.txt
+
+アプリの起動
+
+以下のコマンドでアプリを起動できます：
+
+python app.py
 
 ---
 
