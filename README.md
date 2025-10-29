@@ -110,13 +110,15 @@ Flaskを使ったメール送信・CSV処理の参考実装として再利用可
 
 ### 🌟再利用ポイント：
 
-- SendMail.py：CSV読み込みとメール送信ロジック
+- SendMail.py：CSV読み込み・SMTP送信・エラー処理の流れが整理されていて、他のメール送信系プロジェクトにも応用可能
 
-- templates/send_complete.html：送信前画面テンプレート
+- templates/index.html：CSV読み込み、SMTP送信、エラー処理のロジックを一括管理。通知系アプリのベースとして再利用可能 (CSS埋め込み済み)
 
-- templates/index.html：送信結果の表示テンプレート
+- templates/send_complete.html：送信完了後の画面テンプレート。送信結果の一覧表示に応用可能
 
-- .env：環境変数の雛形
+- .env / .env.sample：Gmail認証情報の管理方法として、他のAPI連携にも応用可能
+
+- requirements.txt(今回は作成していません)： 必要ライブラリとバージョン指定の例として、環境構築の参考になります |
 
 > 💡 再利用時は、ファイル構成や変数名、`.env` の内容などを必ずご自身の環境に合わせて調整してください。
 
