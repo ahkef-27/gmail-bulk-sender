@@ -99,6 +99,7 @@ pip install flask pandas python-dotenv
 
 pip install -r requirements.txt
 
+
 （requirements.txtの内容：↓）
 
 flask==2.3.2
@@ -110,6 +111,7 @@ python-dotenv==1.0.0
 このプロジェクトで使用している HTMLテンプレートや Pythonコードは、  
 Flaskを使ったメール送信・CSV処理の参考実装として再利用可能です。  
 ご自身のプロジェクトに合わせて、必要な部分をコピー・編集してご活用ください。
+
 
 ### 🌟再利用ポイント：
 
