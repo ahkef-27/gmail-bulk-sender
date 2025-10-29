@@ -102,6 +102,12 @@ pip install flask pandas python-dotenv
 
 pip install -r requirements.txt
 
+（requirements.txtの内容：↓）
+
+flask==2.3.2
+pandas==2.1.1
+python-dotenv==1.0.0
+
 ③.コードの再利用について（任意）
 
 このプロジェクトで使用している HTMLテンプレートや Pythonコードは、  
