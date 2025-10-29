@@ -34,6 +34,7 @@ Flaskとpandasを用いて、CSVファイルからGmailを自動送信し、送�
 ```env
 EMAIL_ADDRESS=your_email@example.com
 EMAIL_PASSWORD=your_app_password
+
 ---
 
 ## 💡 工夫した点
