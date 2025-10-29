@@ -114,7 +114,7 @@ Flaskを使ったメール送信・CSV処理の参考実装として再利用可
 
 以下のコマンドでアプリを起動できます：
 
-python app.py
+python SendMail.py
 
 ---
 
