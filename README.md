@@ -25,10 +25,11 @@ Flaskとpandasを用いて、CSVファイルからGmailを自動送信し、送�
 - importエラー時は **Pylance** や **Python拡張機能** を再インストール
 
 ---
+
 ## 🔐 環境変数の設定
 
 このアプリでは `.env` ファイルを使用して、Gmailの認証情報を安全に管理しています。  
-以下のような `.env.sample` を参考に、実行前に `.env` ファイルを作成してください。
+以下のようなコードを参考に、実行前に `.env` ファイルを作成してください。
 
 ```env
 EMAIL_ADDRESS=your_email@example.com
