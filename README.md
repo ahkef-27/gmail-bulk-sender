@@ -82,9 +82,12 @@ SMTP接続エラーなどが発生した場合、赤いエラーメッセージ�
 
 Gmailの認証情報を .env ファイルで管理しています。 セキュリティのため、Gitには含めていません。以下のような内容で .env を作成してください（.env.sample を参考にしてください）：
 
+↓ .env.sample
+
 EMAIL_ADDRESS=your_email@example.com
 
 EMAIL_PASSWORD=your_app_password
+
 
 ② 必要なライブラリのインストール
 
@@ -117,8 +120,6 @@ Flaskを使ったメール送信・CSV処理の参考実装として再利用可
 - templates/send_complete.html：送信完了後の画面テンプレート。送信結果の一覧表示に応用可能
 
 - .env / .env.sample：Gmail認証情報の管理方法として、他のAPI連携にも応用可能
-
-- requirements.txt(今回は作成していません)： 必要ライブラリとバージョン指定の例として、環境構築の参考になります |
 
 > 💡 再利用時は、ファイル構成や変数名、`.env` の内容などを必ずご自身の環境に合わせて調整してください。
 
