@@ -88,6 +88,7 @@ SMTP接続エラーなどが発生した場合、赤いエラーメッセージ�
 Gmailの認証情報を .env ファイルで管理しています。 セキュリティのため、Gitには含めていません。以下のような内容で .env を作成してください（.env.sample を参考にしてください）：
 
 EMAIL_ADDRESS=your_email@example.com
+
 EMAIL_PASSWORD=your_app_password
 
 ② 必要なライブラリのインストール
