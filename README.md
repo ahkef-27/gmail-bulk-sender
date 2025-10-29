@@ -5,12 +5,6 @@ Flaskとpandasを用いて、CSVファイルからGmailを自動送信し、送�
 
 ---
 
-## 📌 プロジェクト名
-
-**Flask × Excel連携による一括メール送信ツール**
-
----
-
 ## 🛠 使用技術
 
 - Python（pandas, smtplib）
