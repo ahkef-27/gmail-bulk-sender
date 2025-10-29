@@ -112,9 +112,11 @@ Flaskを使ったメール送信・CSV処理の参考実装として再利用可
 
 - SendMail.py：CSV読み込みとメール送信ロジック
 
-- templates/result.html：送信結果の表示テンプレート
+- templates/send_complete.html：送信前画面テンプレート
 
-- .env.sample：環境変数の雛形
+- templates/index.html：送信結果の表示テンプレート
+
+- .env：環境変数の雛形
 
 > 💡 再利用時は、ファイル構成や変数名、`.env` の内容などを必ずご自身の環境に合わせて調整してください。
 
